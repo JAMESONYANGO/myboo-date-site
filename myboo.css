@@ -1,59 +1,134 @@
-/* style.css */
-
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8e1f3;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #ffe6f7;
-    color: #c2185b;
+   background-image:c;  
+    background-size: cover; /* Ensures the image covers the entire screen */
+    color: #fff;
     text-align: center;
-    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-section {
-    margin: 20px;
+/* Header */
+header {
+    background-color: rgba(255, 99, 71, 0.8); /* Semi-transparent header background */
+    color: white;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9); /* Light, semi-transparent background for readability */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-    color: #c2185b;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #c2185b;
-    color: #fff;
+/* Links and buttons */
+.link-button, button {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1em;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
-    background-color: #ad1457;
+.link-button:hover, button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
-#summary {
-    text-align: center;
+button:active, .link-button:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+/* Select inputs */
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Additional styles */
+.container {
+    margin-bottom: 20px;
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 10px;
     margin-top: 20px;
 }
 
-#summary p {
-    font-weight: bold;
-}
-
-#summary button {
+.container a {
+    display: inline-block;
     margin-top: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
 }
 
-nav {
-    text-align: center;
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .link-button, button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
 }

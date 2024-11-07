@@ -3,67 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Myboo" author="James Onyango" description="">
-    <title>Choose Our Date</title>
+    <title>Perfect Date Planner</title>
     <link rel="stylesheet" href="myboo.css">
 </head>
-<body>
+<body background image= "https://images.unsplash.com/photo-1561574552-1a6b38315f19">
     <header>
-        <h1><marquee behavior="" direction="">Welcome, Faith!</marquee></h1>
-        <p>I'm excited to plan something special. Pick your favorite options below, and we’ll make it happen!</p>
+        <h1>Plan Your Dream Date</h1>
+        <p>Welcome, Faith! Let's create the perfect date plan for you.</p>
     </header>
-<nav>
-    <a href="#destination">Destination</a>
-    <a href="#food">Choose food</a>
-    <a href="#activity">Activity</a>
-</nav>
-    <section id="destination">
-        <h2>Where Should We Go?</h2>
-        <ul>
-            <li><button onclick="chooseOption('Beach', 'destination-choice')"><img src="california.jpeg">Beach</button></li>
-            <li><button onclick="chooseOption('Mountain', 'destination-choice')">Mountain</button></li>
-            <li><button onclick="chooseOption('City', 'destination-choice')">City</button></li>
-            <li><button onclick="chooseOption('Countryside', 'destination-choice')">Countryside</button></li>
-        </ul>
-        <p id="destination-choice">No destination selected yet.</p>
-        
-    </section>
-   
-    <section id="food">
-        <h2>What Would You Like to Eat?</h2>
-        <ul>
-            <li><button onclick="chooseOption('Pizza', 'food-choice')">Pizza</button></li>
-            <li><button onclick="chooseOption('Sushi', 'food-choice')">Sushi</button></li>
-            <li><button onclick="chooseOption('Burger', 'food-choice')">Burger</button></li>
-            <li><button onclick="chooseOption('Salad', 'food-choice')">Salad</button></li>
-        </ul>
-        <p id="food-choice">No food selected yet.</p>
-    </section>
-
-    <section id="activity">
-        <h2>Pick an Activity</h2>
-        <ul>
-            <li><button onclick="chooseOption('Hiking', 'activity-choice')">Hiking</button></li>
-            <li><button onclick="chooseOption('Movie', 'activity-choice')">Movie</button></li>
-            <li><button onclick="chooseOption('Bowling', 'activity-choice')">Bowling</button></li>
-            <li><button onclick="chooseOption('Museum', 'activity-choice')">Museum</button></li>
-        </ul>
-        <p id="activity-choice">No activity selected yet.</p>
-    </section>
-
-    <section id="summary">
-        <h2>Your Perfect Date</h2>
-        <p>Destination: <span id="summary-destination">Not selected</span></p>
-        <p>Food: <span id="summary-food">Not selected</span></p>
-        <p>Activity: <span id="summary-activity">Not selected</span></p>
-        <button onclick="confirmChoices()">Confirm Choices</button>
-    </section>
-    <hr>
-    <section id="#Home">
-        <a href="#">Home</a>
-    </section>
     
+    <main>
+        <div class="container">
+            <a href="destination.html" class="link-button">Choose a Destination</a>
+            <a href="activity.html" class="link-button">Choose an Activity</a>
+            <a href="food.html" class="link-button">Choose Food</a>
+        </div>
+    </main>
 
+    <footer>
+        <p>&copy; 2024 Date Planner. All rights reserved.</p>
+    </footer>
     <script src="myboo.js"></script>
 </body>
 </html>
